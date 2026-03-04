@@ -1,7 +1,13 @@
 name: "Terraform Plan"
 
 on:
+  push:
+    branches:
+      - update-tf-org  # <--- Tu rama actual
+  workflow_dispatch:   # <--- Para que puedas darle al botón de "Run" manual
   pull_request:
+    branches:
+      - update-tf-org
 
 env:
   TF_CLOUD_ORGANIZATION: "Gi-TerraformCourse"
