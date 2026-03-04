@@ -3,7 +3,8 @@ name: "Terraform Apply"
 on:
   push:
     branches:
-      - main
+      - update-tf-org
+  workflow_dispatch:
 
 env:
   TF_CLOUD_ORGANIZATION: "Gi-TerraformCourse"
